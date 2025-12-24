@@ -1,0 +1,102 @@
+/* Copyright (c) Microsoft Corporation.
+Licensed under the MIT license. */
+
+header {
+    background-color: #111e2b;
+    height: 75px;
+    width: 100%;
+}
+
+header > p {
+    color: #FFFFFF;
+    font: bold 1.6em "segoe ui", arial, sans-serif;
+    margin-left: 31px;
+    padding-top: 20px;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+section#text-container > div > p {
+    font: 1.2em "segoe ui", arial, sans-serif;
+}
+
+section#report-container {
+    height: calc(0.6625 * 61vw); /* 16:9 aspect ratio */
+}
+
+@media only screen and (max-width: 575px) {
+    section#report-container {
+        height: calc(0.5625 * 100vw); /* 16:9 aspect ratio */
+    }
+}
+
+footer > p {
+    font: 1em "segoe ui", arial, sans-serif;
+}
+
+iframe {
+    border: none;
+}
+
+/* Botón transparente */
+        .btn-primary {
+            background-color: transparent;
+            border: 2px solid #0a1c23; /* borde morado */
+            color: #f5faf9;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            margin: 1px; /* margen de 1px */
+        }
+
+        .btn-primary:hover {
+            background-color: #393f74;
+            color: rgb(174, 196, 126);
+            border-color: #191b38;
+        }
+
+        .home-btn {
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            color: #e0e6b2; /* azul bootstrap */
+        }
+
+        .home-btn:hover {
+            color: #0a58ca;
+        }
+
+        .title-text {
+            font-size: 18px;
+            font-weight: 600;
+            vertical-align: middle;
+        }
+
+        .btn-title-eos {
+            color: #e8eef4; /* azul */
+        }
+        
+        #report-container {
+            display: flex;
+            justify-content: center;   /* horizontal */
+            align-items: center;       /* vertical */
+            flex-direction: column;    /* si vas a colocar elementos en columna */
+            min-height: 600px;         /* altura mínima para reportes */
+            margin: auto;
+            padding: 20px;             /* separación interna */
+            background: rgba(255, 255, 255, 0.05); /* opcional: ligera transparencia */
+            border-radius: 1px;       /* bordes suaves */
+        }
+
+        #report-container {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
